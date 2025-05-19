@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <meta name="robots" content="All">
+    <meta name="Yeti" content="index, follow">
+    <meta name="Yeti" content="All">
+    <meta name="googlebot" content="All">
+    <meta name="googlebot" content="index, follow">
+    <meta name="daum" content="All">
+    <meta name="daum" content="index, follow">
+    <meta name="title" content="영상편집자 - 장아현 포트폴리오">
+    <meta name="description" content="영상편집자 장아현입니다. 포트폴리오 방문을 환영">
+    <meta name="keywords" content="영상편집자, 미디어편집자">
+    <meta name="author" content="장아현">
+    <meta name="content-language" content="kr">
+
+
+    <meta property="og:type" content="website"> 
+    <meta property="og:site_name" content="AHYEON">
+    <meta property="og:title" content="JANG AHYEON PORTFOLIO">
+    <meta property="og:description" content="지원하는 장아현입니다"> 
+    <meta property="og:image" content="images/thumbnail.png">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <div class="bg">
+    <header>
+        <div class="container">
+            <h1 class="ah"><a href="#">AHYEON</a>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="#intro">Intro</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+        </div>
+        
+        <!-- 별 백그라운드 이미지로 넣고
+         로고 이미지는 플렉스로 주기 -->
+        
+    </header>
+    <main>
+        <section class="container-logo" id="intro">
+            <div class="port"></div>
+            <div class="folio"></div>
+        </section>
+        
+        <section class="gallery" id="video">
+            <div class="gallery-header">
+                <h1>VIDEO</h1> 
+            </div>
+            <!-- <ul class="gallery-collection">
+                <li>
+                    <a href="https://youtu.be/4L6J7LaVehs?si=RKZ1PM0CETrCVibt">
+                        <div class="inner">
+                        <figure>
+                            <video src="video/video1.mp4" loop muted></video>
+                        </figure>
+                        <div class="txt">
+                            <p>1.</p>
+                            <p class="ddd">타이틀 시퀀스</p>
+                        </div>
+                    </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://youtu.be/qwHMw4P7IxY?si=AdTIpHYc4LBJpVB6">
+                          <div class="inner">
+                        <figure>
+                            <video src="video/video2.mp4" loop muted></video>
+                        </figure>
+                        <div class="txt">
+                            <p>2.</p>
+                            <p class="ddd">영상</p>
+                        </div>
+                    </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://youtu.be/2ZIxcfxtthE?si=J72QkY1FSRl3QR6O">
+                        <div class="inner">
+                        <figure>
+                            <video src="video/video3.mp4" loop muted></video>
+                        </figure>
+                        <div class="txt">
+                            <p>3.</p>
+                            <p class="ddd">영상</p>
+                        </div>
+                    </div>
+                    </a>
+                </li>
+            </ul> -->
+     
+ <div class="abc">
+    <img class="thumbnail"
+         src="images/youtube1.jpg"
+         alt="영상1"
+         data-video-id="hFcm11aJBOo"
+         data-description-title="1. 모션 디자인 영상"
+         data-description-body="이 영상은 <b>첫 번째 프로젝트</b>입니다.<br>After Effects로 제작하였으며 <i>부드러운 트랜지션</i>이 특징입니다.">
+         
+    <img class="thumbnail"
+         src="images/youtube2.jpg"
+         alt="영상2"
+         data-video-id="5cI6XjhaSAg"
+         data-description-title="2. AE 실험 영상"
+         data-description-body="AE 기반 <strong>실험적 작업</strong>으로<br>여러 가지 이펙트와 사운드를 테스트했습니다.">
+         
+    <img class="thumbnail"
+         src="images/youtube3.jpg"
+         alt="영상3"
+         data-video-id="ogHlRozpQ_U"
+         data-description-title="3. 팀 오프닝"
+         data-description-body="팀원들과 협업한 <u>오프닝 영상</u>입니다.<br><em>브랜드 소개용으로 제작</em>되었습니다.">
+
+          <img class="thumbnail"
+         src="images/youtube4.jpg"
+         alt="영상4"
+         data-video-id="VwGW4CVpUXk"
+         data-description-title="3. 팀 오프닝"
+         data-description-body="팀원들과 협업한 <u>오프닝 영상</u>입니다.<br><em>브랜드 소개용으로 제작</em>되었습니다.">
+  </div>
+
+
+
+  <!-- 모달 구조 -->
+  <div class="modal" id="videoModal">
+    <span class="close" onclick="closeModal()">×</span>
+    <iframe id="videoFrame" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="description">
+      <h2 id="descTitle"></h2>
+      <p id="descBody"></p>
+    </div>
+  </div>
+
+        </section>
+        <section>
+            <section class="about" id="about">
+                <div class="about-head">
+                    <div class="about-star1"></div>
+                </div>
+                <h3>ABOUT</h3>
+                <div class="about-layout">
+                  <!-- 왼쪽: 이미지 + 이름/연락처 -->
+                  <div class="about-left">
+                    <div class="aboutimg"></div>
+                    <div class="container2">
+                      <h4>장아현</h4>
+                      <div class="abouttxt">
+                        <h5 class="one">Jang A Hyeon</h5>
+                        <h5 class="two">010-2513-0797</h5>
+                        <h5 class="three">nrrrrrn@naver.com</h5>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <!-- 오른쪽: education + work -->
+                   <div class="line"></div>
+                  <div class="about-right">
+                    <div class="education">
+                      <h5 class="four">Education</h5>
+                      <ul>
+                        <li>송현여자고등학교 졸업</li>
+                        <li>영남이공대학교 패션디자인전공</li>
+                      </ul>
+                    </div>
+              
+                    <div class="work">
+                      <h5 class="five">Work</h5>
+                      <ul>
+                        <li>초아산업</li>
+                        <li>대명월드패션</li>
+                      </ul>
+                    </div>
+                    <div class="skill">Skill</div>
+                    <div class="skill-box">
+                        <img src="images/ai.png" alt="skill-img">
+                        <img src="images/ps.png" alt="skill-img">
+                        <img src="images/pr.png" alt="skill-img">
+                        <img src="images/ae.png" alt="skill-img">
+                        <img src="images/fi.png" alt="skill-img">
+                    </div>
+                  </div>
+
+                </div>
+              </section> 
+        </section>
+    </main>
+    <footer>
+       <p>copyright &copy; Ahyeon portfolio, All right reserved</p>
+    </footer>
+</div>
+
+</body>
+</html>
