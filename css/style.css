@@ -81,16 +81,16 @@ header {
     padding: 0;
 }
 .container-logo {
-    width: 70%;
+    /* width: 70%;
     margin: 100px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background: url('../images/star.png') no-repeat 0px 5px;
-    padding: 3rem 5rem;
+    padding: 3rem 5rem; */
 }
 
-.port {
+/* .port {
     background: url('../images/port.png') no-repeat center/100%;
     width: 965px;
     height: 347px;
@@ -102,21 +102,24 @@ header {
     width: 1041px;
     height: 329px;
     align-self: flex-end;
+} */
+.container-logo {
+   width: 100%;
+    /* height: 500px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 5rem;
 }
+.container-logo .logo {
+    display: flex;
+    background: url('../images/logo.png') no-repeat center/100%;
+    width: 80rem;
+    height: 40rem;
+    /* display: block; */
 
-.logo {
-    margin: 0 auto;
-    position: absolute;
 }
-
-.logo:nth-child(2) {
-    top: 180px;
-    left: 370px;
-}
-
-main {
-    position: relative;
-}
+ 
 
 .box {
     position: sticky;
